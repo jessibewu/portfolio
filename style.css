@@ -3,7 +3,7 @@
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 3px;
   }
 
 /* Header */
@@ -14,7 +14,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   
 }
 
 header nav {
@@ -51,6 +50,7 @@ section {
 .section-title {
     color: rgb(76, 119, 199);
     font-style: italic;
+    text-align: center;
 }
 
 .about-me {
@@ -62,31 +62,72 @@ section {
     padding: 20px;
 }
 
-div img {
-    width: 150px;
+.flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
+.flex-row h3, .flex-row div p {
+    width: 150px;
+    text-align: left;
+    float: left;
+}
+
+.flex-row span {
+    font-family: cursive;
+    font-size: 28px;
+    transform: rotate(-4deg);
+}
+
+.flex-row img {
+    float: right;
+    width: 150px;
+    height: 150px;
+    border-radius: 8%;
+}
+
+.works {
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Add a hover effect if you want */
+.work-img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
 
 .contact-me a:hover {
     opacity: 0.7;
     text-decoration: none;
   }
 
-
-
 /* Social Media Icon */
 .fa {
-    padding: 5px;
-    font-size: 30px;
-    width: 25px;
+    padding: 12px;
+    font-size: auto;
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     background: black;
     color: white;
-  }
+}
+
+.material-icons {
+    padding: 7px;
+    font-size: auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: white;
+}
 
   /* Add a hover effect if you want */
-.fa:hover {
+.fa:hover, .material-icons:hover {
     opacity: 0.7;
     border-radius: 50%;
   }
@@ -99,10 +140,25 @@ footer {
 
 .contact-me {
     border-bottom-right-radius: 30px;
+   
 }
 
+@media screen and (min-width: 575px) {
 
-  
+.flex-about {
+    float: auto;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+.flex-about {
+    display: inline-block;
+    width: 550px;
+}
    
-  
-  
+.flex-about img {
+    float:inherit;
+}
+}
