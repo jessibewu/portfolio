@@ -87,13 +87,19 @@ section {
     border-radius: 8%;
 }
 
+.work-img1 img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10%;
+}
+
 .works {
     padding: 20px;
     display: inline-block;
 }
 
 /* Add a hover effect if you want */
-.work-img:hover {
+.work-img:hover, .work-img1 img:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }
