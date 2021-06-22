@@ -15,8 +15,8 @@ header {
     flex-wrap: wrap;
 }
 
-header nav {
-    margin: 7px 0;
+.nav {
+    margin: 7px 0; 
 }
 
 header a {
@@ -38,7 +38,15 @@ header a:hover {
 header nav ul {
     list-style: none;
     font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
+
+header nav ul li a {
+    padding: 10px 20px;
+  }
 
 /* Body Styles */
 section {
@@ -55,6 +63,24 @@ section {
 .about-me {
     border-top-left-radius: 40px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image img{
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.image-text {
+    font-size: 16px;
+    padding-left: 40px;
+    width: 80%;
+    text-align: right;
+  }
 
 .flex-about p {
     padding: 10px;
@@ -93,6 +119,19 @@ section {
 .works {
     padding: 20px;
     display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.works h3 {
+    background-color: #a8adba;
+    background: rgba(204, 204, 204, 0.5);
+    color: rgb(255, 255, 255);
+    align-items: flex-end;  
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    width: 50%;
 }
 
 /* Add a hover effect if you want */
@@ -150,6 +189,15 @@ footer {
 }
 
 @media screen and (min-width: 575px) {
+
+.image img {
+    width: auto;
+}
+
+.image-text {
+    width: fit-content;
+    size: 20px;
+}
 
 .flex-about {
     float: auto;
