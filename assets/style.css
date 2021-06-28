@@ -93,10 +93,6 @@ section {
     text-align: right;
   }
 
-.flex-about p {
-    padding: 10px;
-}
-
 #about, #work, #contact {
     text-align: center;
     padding: 0 20px 20px 30px;
@@ -205,31 +201,19 @@ footer {
     padding: ;
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 375px) {
+
+nav ul li a{
+    font-size: 140%;
+}
 
 .image img {
-    width: auto;
+    width: 450px;
 }
 
 .image-text {
     width: fit-content;
     size: 20px;
 }
-
-.flex-about {
-    float: auto;
 }
 
-}
-
-@media screen and (min-width: 768px) {
-
-.flex-about {
-    display: inline-block;
-    width: 550px;
-}
-   
-.flex-about img {
-    float:inherit;
-}
-}
