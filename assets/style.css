@@ -82,7 +82,7 @@ section {
 }
 
 .image img{
-    max-width: 50%;
+    max-width: 150px;
     border-radius: 10px;
 }
 
@@ -201,19 +201,33 @@ footer {
     padding: ;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 250px) {
 
 nav ul li a{
-    font-size: 140%;
+    font-size: 130%;
 }
 
-.image img {
-    width: 450px;
+.container {
+    display: inline-block;
 }
 
-.image-text {
-    width: fit-content;
-    size: 20px;
+.image-text p{
+    width: 120%;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 }
 
+@media screen and (min-width: 768px) {
+
+.container {
+    display: flex;
+}
+
+.image-text p {
+    width: 90%;
+    text-align: right;
+    padding-top: 10px;
+}
